@@ -4,28 +4,54 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainController {
     // Var FXML
     @FXML
-    TextField textField;
+    private TextField textField;
+    @FXML
+    private BorderPane borderPane;
+    @FXML
+    private Pane Number_1;
+    @FXML
+    private Pane test;
+
+    // Var
+    private List<Text> listTextNumber;
 
     @FXML
     public void initialize() {
-        System.out.println("Init");
+
+        listTextNumber = new ArrayList<Text>();
+
+        addEventToNumber();
+
+        System.out.println("Inited!");
     }
 
-    public void add(MouseEvent e) {
-        System.out.println("Add");
+    // Gắn sự kiện vào tất cả các số
+    private void addEventToNumber() {
+        for (int i = 0; i <= 9; i++) {
+            String idNumber = "#number_" + String.valueOf(i);
+            Text text = (Text) borderPane.lookup(idNumber);
+            listTextNumber.add(text);
+            text.setOnMouseClicked(e -> {
+                handleNumber(e);
+            });
+        }
     }
-    public void sub(MouseEvent e) {
-        System.out.println("Sub");
-    }
-    public void mul(MouseEvent e) {
-        System.out.println("Mul");
-    }
-    public void div(MouseEvent e) {
-        System.out.println("Div");
+
+    // Thêm sự kiến khi bấm vào số
+    public void handleNumber(MouseEvent e) {
+        Text text = (Text) e.getSource();
+        String number = text.getId().split("_")[1];
+        textField.setText(textField.getText() + number);
     }
 
     public void close(ActionEvent e) {

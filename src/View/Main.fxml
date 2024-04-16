@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="350.0" minHeight="-Infinity" minWidth="350.0" prefHeight="400.0" prefWidth="350.0" scaleShape="false" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.MainController">
+<BorderPane fx:id="borderPane" cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="350.0" minHeight="-Infinity" minWidth="350.0" prefHeight="400.0" prefWidth="350.0" scaleShape="false" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.MainController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -70,7 +70,7 @@
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </TextField>
-            <GridPane alignment="TOP_CENTER" focusTraversable="true" gridLinesVisible="true" mouseTransparent="true" VBox.vgrow="ALWAYS">
+            <GridPane alignment="TOP_CENTER" cacheShape="false" centerShape="false" gridLinesVisible="true" scaleShape="false" VBox.vgrow="ALWAYS">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
@@ -85,10 +85,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
               </rowConstraints>
                <children>
-                  <Pane fx:id="pane_1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(75, 74, 73);" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Pane>
+                  <Pane fx:id="pane_1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(75, 74, 73);" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
                   <Pane fx:id="pane_2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(75, 74, 73);" GridPane.columnIndex="1" />
                   <Pane fx:id="pane_3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(75, 74, 73);" GridPane.columnIndex="2" />
                   <Pane fx:id="pane_4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" />
@@ -96,7 +93,7 @@
                   <Pane fx:id="pane_6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                   <Pane fx:id="pane_7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" GridPane.rowIndex="3" />
                   <Pane fx:id="pane_8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                  <Pane fx:id="Number_9" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="1" />
+                  <Pane fx:id="pane_9" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="1" />
                   <Pane fx:id="pane_10" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Pane fx:id="pane_11" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                   <Pane fx:id="pane_12" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="2" />
@@ -105,103 +102,100 @@
                   <Pane fx:id="pane_15" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="3" />
                   <Pane fx:id="pane_16" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Pane fx:id="pane_17" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                  <Pane fx:id="pane_18" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnSpan="2" GridPane.rowIndex="4">
-                     <cursor>
-                        <Cursor fx:constant="NONE" />
-                     </cursor></Pane>
-                  <Pane fx:id="Number_19" focusTraversable="true" prefHeight="58.0" prefWidth="180.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Pane fx:id="test" cacheShape="false" centerShape="false" prefHeight="200.0" prefWidth="200.0" scaleShape="false" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="4" />
+                  <Pane fx:id="pane_18" prefHeight="58.0" prefWidth="180.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <Pane fx:id="pane_20" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                  <Text fx:id="Number_9" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Text fx:id="number_9" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_8" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Text fx:id="number_8" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_7" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Text fx:id="number_7" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_6" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Text fx:id="number_6" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_5" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Text fx:id="number_5" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_4" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Text fx:id="number_4" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_3" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Text fx:id="number_3" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_2" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Text fx:id="number_2" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_1" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Text fx:id="number_1" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="Number_0" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <Text fx:id="number_0" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="+/-" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Text accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="+/-" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="\%" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                  <Text accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="\%" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="operatorDiv" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Text fx:id="operatorDiv" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="operatorMul" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Text fx:id="operatorMul" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="operatorSub" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Text fx:id="operatorSub" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="operatorAdd" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Text fx:id="operatorAdd" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="operatorEqual" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <Text fx:id="operatorEqual" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fx:id="commaSign" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="," GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <Text fx:id="commaSign" accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="," GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="AC" textOrigin="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                  <Text accessibleRole="BUTTON" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="AC" textOrigin="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
