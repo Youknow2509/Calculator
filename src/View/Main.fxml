@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="350.0" minHeight="-Infinity" minWidth="350.0" prefHeight="400.0" prefWidth="350.0" scaleShape="false" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+              <MenuItem mnemonicParsing="false" text="Redo" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <MenuItem mnemonicParsing="false" text="Selecte All" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <CheckMenuItem mnemonicParsing="false" text="Basic" />
+                  <CheckMenuItem mnemonicParsing="false" text="Scientific" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Convert">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Window">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textField" alignment="CENTER_RIGHT" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" minHeight="80.0" prefHeight="80.0" prefWidth="350.0" scaleShape="false" style="-fx-background-color: rgb(53, 51, 50); -fx-text-fill: #ffff;" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <GridPane alignment="TOP_CENTER" focusTraversable="true" gridLinesVisible="true" mouseTransparent="true" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Pane fx:id="pane_1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(75, 74, 73);" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Pane>
+                  <Pane fx:id="pane_2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(75, 74, 73);" GridPane.columnIndex="1" />
+                  <Pane fx:id="pane_3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(75, 74, 73);" GridPane.columnIndex="2" />
+                  <Pane fx:id="pane_4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" />
+                  <Pane fx:id="pane_5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Pane fx:id="pane_6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Pane fx:id="pane_7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Pane fx:id="pane_8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(242, 163, 60);" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Pane fx:id="Number_9" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="1" />
+                  <Pane fx:id="pane_10" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Pane fx:id="pane_11" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Pane fx:id="pane_12" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="2" />
+                  <Pane fx:id="pane_13" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Pane fx:id="pane_14" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Pane fx:id="pane_15" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.rowIndex="3" />
+                  <Pane fx:id="pane_16" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Pane fx:id="pane_17" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Pane fx:id="pane_18" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></Pane>
+                  <Pane fx:id="Number_19" focusTraversable="true" prefHeight="58.0" prefWidth="180.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Pane fx:id="pane_20" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(100, 99, 99);" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Text fx:id="Number_9" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_8" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_7" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_6" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_5" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_4" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_3" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_2" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_1" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Number_0" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="+/-" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="\%" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="operatorDiv" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="operatorMul" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="operatorSub" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="operatorAdd" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="operatorEqual" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="commaSign" fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="," GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="AC" textOrigin="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</BorderPane>
