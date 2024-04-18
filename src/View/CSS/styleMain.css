@@ -1,5 +1,8 @@
-.number {
 
+.number {
+    -fx-font-size: 20;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
 }
 .paneNumber {
     -fx-background-color: rgb(100, 99, 99);
@@ -10,3 +13,36 @@
 .paneFunction {
     -fx-background-color: rgb(75, 74, 73);
 }
+.textFiled {
+    -fx-background-color:  rgb(53, 51, 50);
+    -fx-text-fill: #ffffff;
+}
+
+.number:hover {
+    -fx-opacity: 0.7;
+}
+.number:pressed {
+    -fx-background-color: #388E3C;
+}
+
+.paneNumber:hover {
+    -fx-opacity: 0.7;
+}
+.paneNumber:pressed {
+    -fx-background-color: #388E3C;
+}
+
+.paneOperator:hover {
+    -fx-opacity: 0.7;
+}
+.paneOperator:pressed {
+    -fx-background-color: #388E3C;
+}
+
+.paneFunction:hover {
+    -fx-opacity: 0.7;
+}
+.paneFunction:pressed {
+    -fx-background-color: #388E3C;
+}
+
