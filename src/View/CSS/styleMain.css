@@ -1,0 +1,12 @@
+.number {
+
+}
+.paneNumber {
+    -fx-background-color: rgb(100, 99, 99);
+}
+.paneOperator {
+    -fx-background-color: rgb(242, 163, 60);
+}
+.paneFunction {
+    -fx-background-color: rgb(75, 74, 73);
+}
